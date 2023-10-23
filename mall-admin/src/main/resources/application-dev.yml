@@ -13,17 +13,17 @@ spring:
         login-username: druid
         login-password: druid
   redis:
-    host: localhost # Redis服务器地址
+    host: 120.25.208.226 # Redis服务器地址
     database: 0 # Redis数据库索引（默认为0）
     port: 6379 # Redis服务器连接端口
-    password: # Redis服务器连接密码（默认为空）
+    password: redis
     timeout: 300ms # 连接超时时间（毫秒）
 
 minio:
-  endpoint: http://localhost:9000 #MinIO服务所在地址
-  bucketName: mall #存储桶名称
-  accessKey: minioadmin #访问的key
-  secretKey: minioadmin #访问的秘钥
+  endpoint: http://120.25.208.226:9000 #MinIO服务所在地址
+  bucketName: mall-image #存储桶名称
+  accessKey: minio12345 #访问的key
+  secretKey: minio12345 #访问的秘钥
 
 logging:
   level:
